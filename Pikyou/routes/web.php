@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/','App\Http\Controllers\allControllers@index');
+
+Route::get('/subscribe', 'App\Http\Controllers\allControllers@sub');
+
+Route::get('/connect', 'App\Http\Controllers\allControllers@connect');
+
+Route::get('/profil/{id}', 'App\Http\Controllers\allControllers@profil');
