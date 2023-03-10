@@ -20,3 +20,5 @@ Route::get('/subscribe', 'App\Http\Controllers\allControllers@sub');
 Route::get('/connect', 'App\Http\Controllers\allControllers@connect');
 
 Route::get('/profil/{id}', 'App\Http\Controllers\allControllers@profil');
+
+Route::get('/about', 'App\Http\Controllers\allControllers@about');

@@ -26,4 +26,9 @@ class allControllers extends Controller
     {
         return view('profil');
     }
+
+    public function about() 
+    {
+        return view('about');
+    }
 }
