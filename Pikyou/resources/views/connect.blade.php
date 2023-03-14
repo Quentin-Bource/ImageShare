@@ -4,7 +4,7 @@
 
     <main>
     <div class="w-full p-10 flex justify-center  ">
-  <form class="bg-white shadow-md rounded p-10 mb-4">
+  <form class="bg-white w-2/3  shadow-md rounded p-10 mb-4">
     <div class="mb-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
         Username
