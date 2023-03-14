@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->binary('picture');
             $table->mediumtext('description');
-            $table->foreignId('userId')->constrained('users');
+            $table->foreignId('userId');
             $table->timestamps();
         });
     }
