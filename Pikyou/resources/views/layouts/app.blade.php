@@ -10,6 +10,5 @@
 <body class="body bg-blue-200 ">
  @include('partials.navbar')
  @yield('content')   
- 
 </body>
 </html>
