@@ -22,3 +22,5 @@ Route::get('/connect', 'App\Http\Controllers\allControllers@connect');
 Route::get('/profil/{id}', 'App\Http\Controllers\allControllers@profil');
 
 Route::get('/about', 'App\Http\Controllers\allControllers@about');
+
+Route::get('/picture/{id}', 'App\Http\Controllers\allControllers@picture');

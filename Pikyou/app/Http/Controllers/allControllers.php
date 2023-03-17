@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class allControllers extends Controller
@@ -9,8 +10,18 @@ class allControllers extends Controller
 
     public function index()
     {
-        return view('index');
+        $posts = Post::all();
+        
+        return view('index' , [
+            'posts' => $posts
+        ]);
     }
+
+    public function post($id)
+    {
+        return view('post');
+    }
+
 
     public function sub()
     {
