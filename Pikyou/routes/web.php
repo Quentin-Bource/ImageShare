@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','App\Http\Controllers\allControllers@index');
 
-Route::get('/subscribe', 'App\Http\Controllers\allControllers@sub');
+Route::get('/subscribe', 'App\Http\Controllers\allControllers@sub')->name('sub');
 
 Route::get('/connect', 'App\Http\Controllers\allControllers@connect');
 
@@ -23,4 +23,4 @@ Route::get('/profil/{id}', 'App\Http\Controllers\allControllers@profil');
 
 Route::get('/about', 'App\Http\Controllers\allControllers@about');
 
-Route::get('/picture/{id}', 'App\Http\Controllers\allControllers@picture');
+Route::get('/post/{id}', 'App\Http\Controllers\allControllers@post')->name('post');

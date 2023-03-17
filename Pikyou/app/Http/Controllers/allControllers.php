@@ -19,7 +19,11 @@ class allControllers extends Controller
 
     public function post($id)
     {
-        return view('post');
+        $post = Post::find($id);
+        
+        return view('post', [
+            'post' => $post
+        ]);
     }
 
 
