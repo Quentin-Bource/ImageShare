@@ -19,7 +19,7 @@ class allControllers extends Controller
 
     public function post($id)
     {
-        $post = Post::find($id);
+        $post = Post::findOrFail($id);
         
         return view('post', [
             'post' => $post
@@ -42,8 +42,20 @@ class allControllers extends Controller
         return view('profil');
     }
 
-    public function about() 
-    {
-        return view('about');
+    public function store(Request $request)
+    {   Post::create([
+        'title'->$request->title,
+        'description'->$request->description,
+        'picture'->$request->picture,
+        'userId'->$request->userId
+    ]);
+        dd("C'est nickel");
     }
+
+    public function create() 
+    {
+        return view('create');
+    }
+
+   
 }

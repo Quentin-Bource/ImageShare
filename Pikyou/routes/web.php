@@ -21,6 +21,9 @@ Route::get('/connect', 'App\Http\Controllers\allControllers@connect');
 
 Route::get('/profil/{id}', 'App\Http\Controllers\allControllers@profil');
 
-Route::get('/about', 'App\Http\Controllers\allControllers@about');
+Route::get('/create', 'App\Http\Controllers\allControllers@create');
+
+Route::post('/create', 'App\Http\Controllers\allControllers@store')->name('post.image');
+
 
 Route::get('/post/{id}', 'App\Http\Controllers\allControllers@post')->name('post');
