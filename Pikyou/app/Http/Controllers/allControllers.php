@@ -43,12 +43,15 @@ class allControllers extends Controller
     }
 
     public function store(Request $request)
-    {   Post::create([
-        'title'->$request->title,
-        'description'->$request->description,
-        'picture'->$request->picture,
-        'userId'->$request->userId
+    {   
+        Post::create([
+
+        'title'=>$request->title,
+        'description'=>$request->description,
+        'picture'=>$request->picture,
+        'userId'=>$request->userId
     ]);
+
         dd("C'est nickel");
     }
 

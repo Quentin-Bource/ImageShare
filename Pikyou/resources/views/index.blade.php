@@ -12,7 +12,7 @@
 <main>
     @foreach($posts as $post)
 
-   <a href="{{ route('post', ['id' => $post->id]) }}"> <img class="grid" src="{{ $post->picture}}" alt="picture"> </a> 
+   <a href="{{ route('post', ['id' => $post->id]) }}"> <img class="grid" src="{{ $post->picture }}" alt="picture"> </a> 
 
     @endforeach 
 </main>
